@@ -3,6 +3,7 @@ package edu.dmacc.codedsm;
 public class GameLogic {
 
     private GameRunner runner;
+    
 
     public GameLogic(GameRunner runner) {
         this.runner = runner;
@@ -28,6 +29,7 @@ public class GameLogic {
         Integer score = 0;
         if (runner.isVictorious()) {
             score = 10000;
+            
         } else if (runner.isDefeated()) {
             score = 100;
         }
